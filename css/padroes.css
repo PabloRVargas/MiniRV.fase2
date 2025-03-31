@@ -1,0 +1,85 @@
+.classe_botao
+{
+    width: 100%;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+#superior
+{
+    background-color: rgb(178, 187, 182);
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    padding: 20px;
+    font-family: sans-serif;
+    
+}
+
+#container-central
+{
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 25px;
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 20px;
+    font-family: sans-serif;
+
+}
+
+#container-menu
+{
+    margin-left: 10px;
+    
+}
+
+#footer
+{
+    margin-top: 25px;
+    padding-left: 20px;
+    text-align: center;
+    color: #657960;
+    font-family: sans-serif;
+    
+}
+
+.list-group-item a
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5d8354;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+p
+{
+    margin-left: 50px;
+    margin-right: 10%;
+    font-weight: 400;
+    text-align: justify ;
+    font-family: sans-serif;
+}
+
+input:invalid, select:invalid
+{
+    border: 2px solid red;
+}
+
+.contatos
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.icon
+{
+    width: 50px;
+    padding: 8px;
+}
+
+.carousel-inner img 
+{
+    width: 500px;  /* Defina a largura desejada */
+    height: 300px; /* Defina a altura desejada */
+    object-fit: contain; /* Mantém a proporção e corta o excesso */
+  }

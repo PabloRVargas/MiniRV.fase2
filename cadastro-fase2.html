@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado RV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/padroes.css">
+</head>
+<body>
+    <div id="superior">
+        <a href="index.html">
+            <img src="/Imagens/logo.jpg" width="200" height="100">
+        </a>
+    </div>
+
+    <div id="container-menu" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2" d-flex flex-row gap-2 p-3>
+                <a href="index.html" class="classe_botao btn btn-outline-success" alt="Página inicial">Home</a>
+                <a href="produtos.html" class="classe_botao btn btn-outline-success" alt="Produtos">Produtos</a>
+                <a href="retirada-fase2.html" class="classe_botao btn btn-outline-success">Entregas</a>
+                <a href="sobre-fase2.html" class="classe_botao btn btn-outline-success">Sobre nós</a>
+                <a href="cadastro-fase2.html" class="classe_botao btn btn-outline-success">Cadastre-se</a>
+                <a href="contatos-fase2.html" class="classe_botao btn btn-outline-success">Contato</a>                
+            </div>
+            <div id="container-central" class="col-sm-10 shadow">
+                <form action="https://formsubmit.co/pablovargas2@gmail.com" method="POST">
+                        <fieldset class="mb-5">
+                            <legend>Dados Pessoais</legend>
+                            <!-- Nome -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3"> 
+                                    <label for="nome" class="form-label">Nome*</label>
+                                    <input type="text" class="form-control" id="nome" aria-describedby="ajudaNome" autofocus required>
+                                    <div id="ajudaNome" class="form-text">Informe o seu primeiro nome.</div>
+                                </div>
+                            </div>
+                
+                            <!-- Sobrenome -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="sobreNome" class="form-label">Sobrenome*</label>
+                                    <input type="text" class="form-control" id="sobreNome" aria-describedby="ajudaSNome" required>
+                                    <div id="ajudaSNome" class="form-text">Informe o seu sobrenome.</div>
+                                </div>
+                            </div>
+                
+                            <!-- CPF -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="cpf" class="form-label">CPF*</label>
+                                    <input type="text" class="form-control" id="cpf" aria-describedby="ajudaCPF" required>
+                                    <div id="ajudaCPF" class="form-text">Informe o seu CPF.</div>
+                                </div>
+                            </div>
+                
+                            <!-- Data de Nascimento -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="dtNascimento" class="form-label">Data de nascimento*</label>
+                                    <input type="date" class="form-control" id="dtNascimento" aria-describedby="ajudaDtNasc" required>
+                                    <div id="ajudaDtNasc" class="form-text">Selecione sua data de nascimento.</div>
+                                </div>
+                            </div>
+
+                            <!-- E-mail -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">E-mail*</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="ajudaEmail" required>
+                                    <div id="ajudaEmail" class="form-text">Informe seu endereço de correio eletrônico.</div>
+                                </div>
+                            </div>
+
+                            <!-- Gênero -->
+                            <label class="form-label">Gênero</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="masc">
+                                <label class="form-check-label" for="masc">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="genero" id="fem">
+                                <label class="form-check-label" for="fem">Feminino</label>
+                            </div>
+                        </fieldset>
+                
+                        <!-- Dados para Entrega -->
+                        <fieldset class="mb-5">
+                            <legend>Dados para entrega</legend>
+                            
+                            <!-- Endereço -->
+                            <div class="row">
+                                <div class="col-md-8 mb-3"> <!-- Largura maior (8 colunas) -->
+                                    <label for="endereco" class="form-label">Endereço*</label>
+                                    <input type="text" class="form-control" id="endereco" aria-describedby="ajudaEnd" required>
+                                    <div id="ajudaEnd" class="form-text">Informe o seu endereço completo.</div>
+                                </div>
+                            </div>
+                
+                            <!-- CEP -->
+                            <div class="row">
+                                <div class="col-md-4 mb-3"> <!-- Largura menor (4 colunas) -->
+                                    <label for="cep" class="form-label">CEP*</label>
+                                    <input type="text" class="form-control" id="cep" aria-describedby="ajudacep" required>
+                                    <div id="ajudacep" class="form-text">Informe o seu CEP.</div>
+                                </div>
+                            </div>
+                
+                            <!-- Celular -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="numCel" class="form-label">Celular*</label>
+                                    <input type="text" class="form-control" id="numCel" aria-describedby="ajudaCel" required>
+                                    <div id="ajudaCel" class="form-text">Informe o seu número de celular.</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                
+                        <!-- Senha -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha*</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                            </div>
+                        </div>
+                
+                        <!-- Termos -->
+                        <div class="mb-3 form-check">
+                            <input type="termos" class="form-check-input" id="termos" required>
+                            <label class="form-check-label" for="termos">Aceito os termos de uso*</label>
+                        </div>
+                
+                        <!-- Botão -->
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div>
+        <div style="text-align: center;">
+            <h5>Mapa do site</h5>       
+        <ul id="mapa-site" class="list-group">
+            <li class="list-group-item"><a href="index.html">Home</a></li>
+            <li class="list-group-item"><a href="produtos.html">Produtos</a></li>
+            <li class="list-group-item"><a href="retirada-fase2.html">Entregas</a></li>
+            <li class="list-group-item"><a href="sobre-fase2.html">Sobre nós</a></li>
+            <li class="list-group-item"><a href="contatos-fase2.html">Contato</a></li>
+            <li class="list-group-item"><a href="cadastro-fase2.html">Cadastre-se</a></li>
+          </ul>
+          <h6>Desenvolvido por Pablo Rezende Vargas.</h6>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

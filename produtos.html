@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado RV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/padroes.css">
+</head>
+<body>
+    <div id="superior">
+        <a href="index.html">
+            <img src="/Imagens/logo.jpg" width="200" height="100">
+        </a>
+    </div>
+
+    <div id="container-menu" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 d-flex flex-column gap-2 p-3">
+                <a href="index.html" class="classe_botao btn btn-outline-success" alt="Página inicial">Home</a>
+                <a href="produtos.html" class="classe_botao btn btn-outline-success" alt="Produtos">Produtos</a>
+                <a href="retirada-fase2.html" class="classe_botao btn btn-outline-success" alt="Entregas">Entregas</a>
+                <a href="sobre-fase2.html" class="classe_botao btn btn-outline-success" alt="Sobre nós">Sobre nós</a>
+                <a href="cadastro-fase2.html" class="classe_botao btn btn-outline-success" alt="Cadastre-se">Cadastre-se</a>
+                <a href="contatos-fase2.html" class="classe_botao btn btn-outline-success" alt="Contatos">Contato</a>                
+            </div>
+            <div id="container-central" class="col-sm-10 shadow">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#higiene">Higiene e limpeza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#hortifruti">Hortifruti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#mercearia">Mercearia</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3">
+                    <div class="tab-pane fade show active" id="higiene">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/desinfetante.jpg" class="img-fluid" width="300">
+                                <p>Desinfetante Ypê Bak 2L</p>
+                                <p>R$ 13,00</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/lava_louca.jpg" class="img-fluid" width="300">
+                                <p>Lava-Louças para máquina</p>
+                                <p>R$ 33,00</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/sabonete.jpg" class="img-fluid" width="300">
+                                <p>Sabonete Phebo</p>
+                                <p>R$ 4,50</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="hortifruti">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/alface.jpg" class="img-fluid" width="300">
+                                <p>Alface-Crespa 300g</p>
+                                <p>R$ 3,00</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/banana.jpg" class="img-fluid" width="300">
+                                <p>Banana Prata</p>
+                                <p>R$ 11,00/kg</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/cenoura.jpg" class="img-fluid" width="300">
+                                <p>Cenoura</p>
+                                <p>R$ 7,00/kg</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="mercearia">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/cafe.jpg" class="img-fluid" width="300">
+                                <p>Café Coffe Mais Super Specialty 250g</p>
+                                <p>R$ 28,00</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/feijao.jpg" class="img-fluid" width="300">
+                                <p>Feijão preto Kicaldo 1kg</p>
+                                <p>R$ 8,00/kg</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <img src="/Imagens/macarrao.jpg" class="img-fluid" width="300">
+                                <p>Macarrão Barilla 500g</p>
+                                <p>R$ 18,00/kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div>
+        <h6>Mapa do site<h6>
+        <ul id="mapa-site" class="list-group">
+            <li class="list-group-item"><a href="index.html">Home</a></li>
+            <li class="list-group-item"><a href="produtos.html">Produtos</a></li>
+            <li class="list-group-item"><a href="retirada-fase2.html" alt="Entregas">Entregas</a></li>
+            <li class="list-group-item"><a href="sobre-fase2.html" alt="Sobre nós">Sobre nós</a></li>
+            <li class="list-group-item"><a href="contatos-fase2.html" alt="Contatos">Contato</a></li>
+            <li class="list-group-item"><a href="cadastro-fase2.html" alt="Cadastre-se">Cadastre-se</a></li>
+          </ul>
+          <h6>Desenvolvido por Pablo Rezende Vargas.</h6>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
